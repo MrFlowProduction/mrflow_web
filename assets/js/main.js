@@ -93,6 +93,37 @@
     this.classList.toggle("bi-x");
   });
 
+  let cards = select(".icon-box", true);
+  on("click", "#services", function (e) {
+    var node = null;
+
+    if (e.target.classList.value.includes("icon-box")) {
+      node = e.target;
+    } else if (e.target.parentNode.classList.value.includes("icon-box")) {
+      node = e.target.parentNode;
+    } else if (
+      e.target.parentNode.parentNode.classList.value.includes("icon-box")
+    ) {
+      node = e.target.parentNode.parentNode;
+    } else if (
+      e.target.parentNode.parentNode.parentNode.classList.value.includes(
+        "icon-box"
+      )
+    ) {
+      node = e.target.parentNode.parentNode.parentNode;
+    }
+
+    if (node) {
+      cards.forEach((card) => {
+        if (card != node) {
+          card.classList.remove("clicked");
+        }
+      });
+
+      node.classList.toggle("clicked");
+    }
+  });
+
   /**
    * Scrool with ofset on links with a class name .scrollto
    */

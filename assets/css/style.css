@@ -1190,3 +1190,132 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
+/*--------------------------------------------------------------
+# Mr.Flow Production styles
+--------------------------------------------------------------*/
+
+/*.services-card .icon-box {
+  cursor: pointer;
+  user-select: none;
+  transition: 3s !important;
+  overflow: hidden;
+  padding: 100px 30px 100px 30px;
+  align-self: center;
+}
+
+.services-card .icon-box p {
+  transform: translate(0px,200px);
+  display: block;
+  width: 296px;
+}
+
+.services-card .clicked {
+  position: relative;
+}
+
+.services-card .clicked .icon-box p {
+  transform: translate(0px, -20px);
+}
+
+.services-card .clicked .icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transition: all .3s;
+}
+
+.services-card .clicked h4 {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 18px;
+  transition: all .3s;
+}*/
+
+.services-card .icon-box {
+  cursor: pointer;
+  user-select: none;
+  transition: 3s;
+  overflow: hidden;
+  padding: 80px 20px 20px 20px;
+}
+
+.services-card p {
+  transform: translate(0px, 200px);
+  opacity: 0;
+}
+
+.services-card .clicked .icon {
+  animation: moveIcon 1s ease 1 forwards;
+}
+
+.services-card .clicked h4 {
+  animation: moveTitle 1s ease 1 forwards;
+}
+
+.services-card .clicked p {
+  animation: moveParagraph 1s ease 1 forwards;
+}
+
+@keyframes moveParagraph {
+  0% {
+    transform: translate(0px, 200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, -25px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveIcon {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-120%, -60%);
+  }
+}
+
+@keyframes moveTitle {
+  0% {
+    transform: translate(0px, 0px);
+    font-size: 22px;
+  }
+  100% {
+    transform: translate(16%, -610%);
+    font-size: 18px;
+  }
+}
+
+@keyframes moveBackParagraph {
+  0% {
+    transform: translate(0px, 200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, -25px);
+    opacity: 1;
+  }
+}
+
+@keyframes moveBackIcon {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(-120%, -60%);
+  }
+}
+
+@keyframes moveBackTitle {
+  0% {
+    transform: translate(0px, 0px);
+    font-size: 22px;
+  }
+  100% {
+    transform: translate(16%, -610%);
+    font-size: 18px;
+  }
+}
