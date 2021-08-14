@@ -1195,67 +1195,53 @@ section {
 # Mr.Flow Production styles
 --------------------------------------------------------------*/
 
-/*.services-card .icon-box {
-  cursor: pointer;
-  user-select: none;
-  transition: 3s !important;
-  overflow: hidden;
-  padding: 100px 30px 100px 30px;
-  align-self: center;
-}
-
-.services-card .icon-box p {
-  transform: translate(0px,200px);
-  display: block;
-  width: 296px;
-}
-
-.services-card .clicked {
-  position: relative;
-}
-
-.services-card .clicked .icon-box p {
-  transform: translate(0px, -20px);
-}
-
-.services-card .clicked .icon {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  transition: all .3s;
-}
-
-.services-card .clicked h4 {
-  position: absolute;
-  top: 30px;
-  right: 20px;
-  font-size: 18px;
-  transition: all .3s;
-}*/
-
 .services-card .icon-box {
   cursor: pointer;
   user-select: none;
   transition: 3s;
   overflow: hidden;
   padding: 80px 20px 20px 20px;
+  
+}
+
+.services-card .icon {
+  animation: moveBackIcon .3s ease 1 forwards;
+}
+
+.services-card .clicked .icon {
+  animation: moveIcon .5s ease 1 forwards;
+}
+
+.services-card h4 {
+  animation: moveBackTitle .3s ease 1 forwards;
+}
+
+.services-card .clicked h4 {
+  animation: moveTitle .5s ease 1 forwards;
 }
 
 .services-card p {
   transform: translate(0px, 200px);
   opacity: 0;
-}
-
-.services-card .clicked .icon {
-  animation: moveIcon 1s ease 1 forwards;
-}
-
-.services-card .clicked h4 {
-  animation: moveTitle 1s ease 1 forwards;
+  animation: moveBackParagraph .3s ease-in 1 forwards;
 }
 
 .services-card .clicked p {
-  animation: moveParagraph 1s ease 1 forwards;
+  animation: moveParagraph .5s ease 1 forwards;
+}
+
+.services-card .more-text {
+  color: #ccc;
+  font-weight: 100;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 100%;
+  animation: moveBackSpan 2s ease 1 forwards;
+}
+
+.services-card .clicked .more-text {
+  animation: moveSpan .3s ease 1 forwards;
 }
 
 @keyframes moveParagraph {
@@ -1264,7 +1250,7 @@ section {
     opacity: 0;
   }
   100% {
-    transform: translate(0px, -25px);
+    transform: translate(0px, -50%);
     opacity: 1;
   }
 }
@@ -1289,33 +1275,51 @@ section {
   }
 }
 
-@keyframes moveBackParagraph {
+@keyframes moveSpan {
   0% {
-    transform: translate(0px, 200px);
-    opacity: 0;
+    opacity: 1;
   }
   100% {
+    opacity: 0;
+  }
+}
+
+@keyframes moveBackParagraph {
+  0% {
     transform: translate(0px, -25px);
     opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 200px);
+    opacity: 0;
   }
 }
 
 @keyframes moveBackIcon {
   0% {
-    transform: translate(0px, 0px);
+    transform: translate(-120%, -60%);
   }
   100% {
-    transform: translate(-120%, -60%);
+    transform: translate(0px, 0px);
   }
 }
 
 @keyframes moveBackTitle {
   0% {
+    transform: translate(16%, -610%);
+    font-size: 18px;
+  }
+  100% {
     transform: translate(0px, 0px);
     font-size: 22px;
   }
+}
+
+@keyframes moveBackSpan {
+  0% {
+    opacity: 0;
+  }
   100% {
-    transform: translate(16%, -610%);
-    font-size: 18px;
+    opacity: 1;
   }
 }
