@@ -177,10 +177,10 @@
     typed_strings = typed_strings.split(",");
     new Typed(".typed", {
       strings: typed_strings,
-      loop: false,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000,
+      loop: true,
+      typeSpeed: 50,
+      backSpeed: 25,
+      backDelay: 1000,
     });
   }
 
@@ -297,4 +297,20 @@
       mirror: false,
     });
   });
+
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  if (urlParams.has("error")) {
+    document.querySelector(".error-message").innerHTML =
+      "Hiba az üzenetküldés közben. Próbálja újra!";
+    document.querySelector(".error-message").classList.add("d-block");
+    moveScreenToContact();
+  } else if (urlParams.has("success")) {
+    document.querySelector(".sent-message").classList.add("d-block");
+    moveScreenToContact();
+  }
+
+  function moveScreenToContact() {
+    setTimeout(document.querySelector("#contact").scrollIntoView(), 1000);
+  }
 })();
