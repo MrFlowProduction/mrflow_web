@@ -287,12 +287,16 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
+}
+
+#hero img {
+  margin-right: 30px;
 }
 
 #hero h1 {
@@ -314,6 +318,15 @@ h1, h2, h3, h4, h5, h6 {
   /* color: #0563bb; */
   color: var(--light-brown);
   letter-spacing: 1px;
+}
+
+.request-button {
+  background: var(--light-brown);
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
 }
 
 #hero .social-links {
@@ -1269,6 +1282,22 @@ section {
   animation: moveTitle .5s ease 1 forwards;
 }
 
+.services-card .request-text {
+  transform: translate(0px, 200px);
+  animation: moveBackDiv .3s ease 1 forwards;
+  color: var(--light-brown);
+  font-weight: medium;
+  font-size: 20px;
+}
+
+.services-card .request-text:hover {
+  text-decoration: underline;
+}
+
+.services-card .clicked .request-text {
+  animation: moveDiv .5s ease 1 forwards;
+}
+
 .services-card p {
   transform: translate(0px, 200px);
   opacity: 0;
@@ -1333,6 +1362,17 @@ section {
   }
 }
 
+@keyframes moveDiv {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(16%, -400%);
+    opacity: 1;
+  }
+}
+
 @keyframes moveBackParagraph {
   0% {
     transform: translate(0px, -25px);
@@ -1370,5 +1410,16 @@ section {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes moveBackDiv {
+  0% {
+    transform: translate(16%, -400%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 0;
   }
 }

@@ -97,6 +97,11 @@
   on("click", "#services", function (e) {
     var node = null;
 
+    if (e.target.classList.contains("request-text")) {
+      moveScreenToContact();
+      return;
+    }
+
     if (e.target.classList.value.includes("icon-box")) {
       node = e.target;
     } else if (e.target.parentNode.classList.value.includes("icon-box")) {
@@ -298,11 +303,17 @@
     });
   });
 
+  on("click", ".request-button", function (e) {
+    moveScreenToContact();
+  });
+
+  on("click", ".request-text", function (e) {});
+
   const queryString = window.location.search;
   const urlParams = new URLSearchParams(queryString);
   if (urlParams.has("error")) {
     document.querySelector(".error-message").innerHTML =
-      "Hiba az üzenetküldés közben. Próbálja újra!";
+      "Hiba az ajánlatkérés közben. Próbálja újra!";
     document.querySelector(".error-message").classList.add("d-block");
     moveScreenToContact();
   } else if (urlParams.has("success")) {

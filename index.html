@@ -11,7 +11,7 @@
   <meta name="author" content="Mr. Flow Production">
 
   <meta charset="UTF-8">
-	<meta name="geo.placename" content="Szeged">
+	<meta name="geo.placename" content="Kecskemét">
 	<meta name="geo.region" content="Hungary">
 	<meta name="robots" content="index,follow">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -54,7 +54,7 @@
   <meta name="DC.date" content="2021">
   <meta name="DC.type" content="webpage">
   <meta name="DC.language" content="hu-HU">
-  <meta name="DC.relation" scheme="URI" content="Szeged">
+  <meta name="DC.relation" scheme="URI" content="Kecskemét">
 
   <meta property="al:iphone:url" content="https://mrflow.hu/">
   <meta property="al:iphone:app_name" content="https://mrflow.hu/">
@@ -97,7 +97,7 @@
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Magamról</span></a></li>
         <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Szolgáltatások</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfólió</span></a></li>
-        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Kapcsolat</span></a></li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Ajánlatkérés</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
 
@@ -105,15 +105,26 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Mr. Flow Production</h1>
-      <p><span class="typed" data-typed-items="Nyáktervezés, Firmware írás, Prototípus készítés, Termékfejlesztés, Gyártáskésszé tétel, Kisszériás gyártás, Szoftverfejlesztés, Tanácsadás"></span></p>
-      <div class="social-links">
-        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-        <a href="https://www.facebook.com/mrflowsite/" class="facebook" target="blank"><i class="bx bxl-facebook"></i></a>
-        <a href="https://www.instagram.com/mrflowhu/" target="blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-        <!-- <a href="https://www.linkedin.com/in/szflow/" target="blank" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+    <div class="container d-flex" data-aos="zoom-in" data-aos-delay="100">
+      
+      <div>
+        <img src="assets/img/logo.png" class="img-fluid" alt="" width="120">
+      </div>
+
+      <div>
+        <h1>Mr. Flow Production</h1>
+        <p><span class="typed" data-typed-items="Nyáktervezés, Firmware írás, Prototípus készítés, Termékfejlesztés, Gyártáskésszé tétel, Kisszériás gyártás, Szoftverfejlesztés, Tanácsadás"></span></p>
+        <div class="social-links">
+          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+          <a href="https://www.facebook.com/mrflowsite/" class="facebook" target="blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/mrflowhu/" target="blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+          <!-- <a href="https://www.linkedin.com/in/szflow/" target="blank" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+      </div>
+
+      <div class="text-center mt-5"><button class="request-button">Ajánlatkérés</button></div>
+
+      
       </div>
     </div>
   </section><!-- End Hero -->
@@ -168,6 +179,7 @@
             <h2>Milyen fejlesztéseket vállalok?</h2>
             <p>Kis- és középipari gépek vezérlőelektronikájának tervezése, programozása és gyártása mikroelektronika (Atmel, STM és Espressif) és/vagy mikroszámítógép (Odroid, raspberry pi) alapon akár a legújabb IOT technológiák alkalmazásával. Ha szükséges szívesen vállalom az ezekhez tartozó külső támogató (mint például: tesztelő, beállító, kezelőszoftver, API, távoli hozzáférés, stb....) szoftvereket is, amelyek valamilyen módon hozzájárulnak az üzemeltetéshez.</p>
             <p class="mt-3">Amikre képesek lehetnek ezek a fejlesztések, egy adott probléma megoldása és/vagy funkció bővítése egy adott már működő gépben vagy rendszerben egy külső egységként beépítve. De lehet teljesen zöldmezős projekt is, amihez szükség van valamilyen elektronikára.</p>
+            <div class="text-center mt-5"><button class="request-button">Ajánlatkérés</button></div>
           </div>
 
         </div>
@@ -267,6 +279,7 @@
                 <i class="bi bi-pci-card"></i>
               </div>
               <h4>Nyáktervezés</h4>
+              <div class="request-text">Ajánlat</div>
               <p>Egyedi digitális, mikrokontroller alapú nyáklapok tervezése már nettó 50 000 Ft -tól.</p>
               <span class="more-text">tovább&raquo;</span>
             </div>
@@ -402,7 +415,6 @@
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">Összes</li>
               <li data-filter=".filter-product">Termék</li>
-              <li data-filter=".filter-pcb">PCB</li>
               <li data-filter=".filter-manufacture">Gyártás</li>
             </ul>
           </div>
@@ -604,235 +616,6 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-manufacture">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/manufacture/man17.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/manufacture/man17.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-manufacture">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/manufacture/man18.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/manufacture/man18.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pcb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/pcb/pcb1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/pcb/pcb1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pcb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/pcb/pcb2.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/pcb/pcb2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pcb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/pcb/pcb3.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/pcb/pcb3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pcb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/pcb/pcb4.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/pcb/pcb4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pcb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/pcb/pcb5.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/pcb/pcb5.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pcb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/pcb/pcb6.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/pcb/pcb6.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-pcb">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/pcb/pcb7.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/pcb/pcb7.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/product/product1.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/product/product1.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/product/product2.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/product/product2.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/product/product3.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/product/product3.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/product/product4.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/product/product4.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/product/product5.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/product/product5.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/product/product6.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/product/product6.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/product/product7.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/product/product7.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/product/product8.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/product/product8.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/product/product9.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/product/product9.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-product">
-            <div class="portfolio-wrap">
-              <img src="assets/img/references/product/product10.jpeg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <div class="portfolio-links">
-                  <a href="assets/img/references/product/product10.jpeg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <!--<a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </section><!-- End Portfolio Section -->
 
@@ -841,7 +624,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Kapcsolat</h2>
+          <h2>Ajánlatkérés</h2>
         </div>
 
         <div class="row mt-1">
@@ -851,7 +634,7 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Hely:</h4>
-                <p>Szeged, Magyarország</p>
+                <p>Kecskemét, Magyarország</p>
               </div>
 
               <div class="email">
@@ -890,9 +673,9 @@
               <div class="my-3">
                 <div class="loading">Töltés</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Az üzenetet elküldtük. Köszönjük!</div>
+                <div class="sent-message">Köszönjük az ajánlatkérést!</div>
               </div>
-              <div class="text-center"><button type="submit">Üzenet elküldése</button></div>
+              <div class="text-center"><button type="submit">Kérés elküldése</button></div>
             </form>
 
           </div>
