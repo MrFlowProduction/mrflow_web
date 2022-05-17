@@ -97,7 +97,7 @@
   on("click", "#services", function (e) {
     var node = null;
 
-    if (e.target.classList.contains("request-text")) {
+    if (e.target.parentNode.classList.contains("request-text")) {
       moveScreenToContact();
       return;
     }

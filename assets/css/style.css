@@ -1285,12 +1285,15 @@ section {
 .services-card .request-text {
   transform: translate(0px, 200px);
   animation: moveBackDiv .3s ease 1 forwards;
+}
+
+.services-card .request-text span {
+  padding: 10px;
   color: var(--light-brown);
-  font-weight: medium;
   font-size: 20px;
 }
 
-.services-card .request-text:hover {
+.services-card .request-text span:hover {
   text-decoration: underline;
 }
 
@@ -1419,7 +1422,7 @@ section {
     opacity: 1;
   }
   100% {
-    transform: translate(0px, 0px);
+    transform: translate(0px, 400px);
     opacity: 0;
   }
 }
