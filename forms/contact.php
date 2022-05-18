@@ -18,7 +18,7 @@
 
     $mail->From     = $_POST['email'];                        // Felado e-mail cime
     $mail->FromName = $_POST['name'];                         // Felado neve
-    $mail->AddAddress('info@mrflow.hu', 'Székely Flórián');   // Cimzett es neve
+    $mail->AddAddress('florian@mrflow.hu', 'Székely Flórián');   // Cimzett es neve
 
     $mail->WordWrap = 80;                                     // Sortores allitasa
 
